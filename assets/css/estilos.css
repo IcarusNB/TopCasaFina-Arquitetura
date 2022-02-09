@@ -1,3 +1,33 @@
+html,
+body {
+  height: 100%;
+}
+
+header {
+  background-image: url('../img/castelo.jpg');
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+}
+
+header h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.topCasaFina-banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 80%;
+}
+
 #paineis-sobre {
   margin-top: 20px;
 }
@@ -9,4 +39,48 @@
   margin-bottom: 0;
   padding-bottom: 25px;
   padding-top: 25px;
+}
+
+.contato-selecao {
+  display: flex;
+  align-items: flex-start;
+}
+
+.grupo-radio,
+.contato-select {
+  width: 50%;
+}
+
+.grupo-radio .radio:first-child {
+  margin-top: 0;
+}
+
+footer {
+  color: #fff;
+  background-color: #333;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+footer address:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #paineis-sobre {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .topCasaFina-banner {
+    left: 0;
+    transform: translate(0, -80%);
+    width: 50%;
+  }
+
+  .topCasaFina-bannerWrapper {
+    position: relative;
+    height: 100%;
+  }
 }
